@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".job_card_customer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/offwhite"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="8dp"
+            android:text="Service type"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_rect"
+            android:layout_marginTop="8dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="16dp"
+                android:text="Denting Painting"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:layout_gravity="right"
+                android:textColor="@color/red"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginRight="36dp"
+                android:text="Details"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_rect_offwhite"
+            android:layout_marginTop="2dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="16dp"
+                android:text="Interior cleaning"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/checked"
+                android:layout_height="16dp" />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_rect"
+            android:layout_marginTop="2dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="16dp"
+                android:text="Exterior cleaning"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/checked_svg"
+                android:layout_height="16dp" />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_rect_offwhite"
+            android:layout_marginTop="2dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="16dp"
+                android:text="Dashboard cleaning"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/checked_svg"
+                android:layout_height="16dp" />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_rect"
+            android:layout_marginTop="2dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="16dp"
+                android:text="@string/rubbing"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/checked_svg"
+                android:layout_height="16dp" />
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/offwhite_01"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="8dp"
+            android:text="Enter details"
+            android:layout_height="wrap_content" />
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="112dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:textColor="@color/offwhite"
+               android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="10sp"
+                android:hint="Describe your problem"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/offwhite_01"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="8dp"
+            android:text="Added services"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="164dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/offwhite_01"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="Sub Total"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="164dp"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="3,200"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/offwhite_01"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="Tax"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="212dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="200"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/offwhite_01"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="Additional charges"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginLeft="118dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="100"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/offwhite_01"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="Total"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginLeft="208dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="12sp"
+                        android:text="100"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="left"
+            android:textColor="@color/offwhite_01"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="8dp"
+            android:text="Images"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="164dp">
+
+            
+
+
+
+        </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="80dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="12sp"
+                android:hint="Describe your problem"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

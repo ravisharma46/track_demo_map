@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">track_demo_map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rubbing">Rubbing &amp; polishing </string>
+</resources>
