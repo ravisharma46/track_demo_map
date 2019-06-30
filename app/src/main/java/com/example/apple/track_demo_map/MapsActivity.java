@@ -1,11 +1,15 @@
 package com.example.apple.track_demo_map;
 
-import android.app.Dialog;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
+import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
+import android.view.View;
+import android.view.animation.LinearInterpolator;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,12 +27,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private ImageView imageView_car,imageView_tool,imageView_toolDone,imageView_carDrop;
-
-    private int animationCounter = 1;
-    private Handler imageSwitcherHandler;
-    private RelativeLayout relativeLayout;
-
-    Dialog dialog;
+    private Button bt;
+    private ProgressBar progressBar;
 
 
 
@@ -46,63 +46,59 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         imageView_toolDone=(ImageView)findViewById(id.tool_done);
         imageView_carDrop=(ImageView)findViewById(id.car_drop);
 
-
-//     imageView_car.setImageResource(R.drawable.car_svg);
-//     imageView_tool.setImageResource(R.drawable.tool_svg);
-//     imageView_toolDone.setImageResource(R.drawable.tool_done_svg);
-//     imageView_carDrop.setImageResource(R.drawable.cardrop_svg);
+        bt=(Button)findViewById(id.buttonPanel);
 
 
+        progressBar = (ProgressBar)findViewById(id.progressbar1);
 
 
-
-        imageSwitcherHandler = new Handler(Looper.getMainLooper());
-        imageSwitcherHandler.post(new Runnable() {
+        bt.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                switch (animationCounter++) {
-                    case 1:
-                       // imageView_car.setImageResource(R.drawable.car_svg);
-                       // imageSwitcher.setImageResource(R.drawable.image1);
-                        break;
-                    case 2:
-                       // imageView_tool.setImageResource(R.drawable.tool_svg);
-                        //imageSwitcher.setImageResource(R.drawable.image2);
-                        break;
-                    case 3:
-                       // imageView_toolDone.setImageResource(R.drawable.tool_done_svg);
-                        //imageSwitcher.setImageResource(R.drawable.image3);
-                   // case 4:
-                     //   imageView_carDrop.setImageResource(R.drawable.cardrop_svg);
-                        //imageSwitcher.setImageResource(R.drawable.image3);
-
-                        break;
-                }
-                animationCounter %= 4;
-               if(animationCounter == 0 ) animationCounter = 1;
-
-                imageSwitcherHandler.postDelayed(this, 2000);
+            public void onClick(View view) {
+                Intent i= new Intent(MapsActivity.this,job_table.class);
+                startActivity(i);
             }
         });
 
 
-//        relativeLayout = (RelativeLayout) findViewById(R.id.seek_bar);
-//      //  AnimationDrawable animationDrawable = (AnimationDrawable) relativeLayout.getBackground();
-//        //animationDrawable.start();
-//
-//        ScaleAnimation fade_in =  new ScaleAnimation(0f, 1f, 0f, 1f,
-//                Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-//        fade_in.setDuration(9000);     // animation duration in milliseconds
-//        fade_in.setFillAfter(true);    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
-//        relativeLayout.startAnimation(fade_in);
+
+        progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.green), PorterDuff.Mode.SRC_IN);
+
+        ObjectAnimator animation = ObjectAnimator.ofInt(progressBar, "progress", 0, 70);
+
+       animation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+           @Override
+           public void onAnimationUpdate(ValueAnimator valueAnimator) {
+               int val = (Integer) valueAnimator.getAnimatedValue();
+              // Log.e("TAG",Integer.toString(val));
+               if(val==35){
+                imageView_car.setImageResource(R.drawable.car_svg);
+            }
+            if(val==45){
+                imageView_tool.setImageResource(R.drawable.tool_svg);
+            }
+            if(val==55){
+                imageView_toolDone.setImageResource(R.drawable.tool_done_svg);
+            }
+            if(val==70){
+                imageView_carDrop.setImageResource(R.drawable.cardrop_svg);
+            }
+
+
+           }
+       });
+
+        animation.setDuration(4000);
+        animation.setInterpolator(new LinearInterpolator());
+        animation.start();
+
+
+
 
 
 
 
     }
-
-
-
 
 
 
