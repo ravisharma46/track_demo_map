@@ -44,7 +44,7 @@
             android:id="@+id/image_icon"
             android:layout_height="64dp"
             android:layout_marginLeft="16dp"
-            android:src="@drawable/wallet"
+            android:src="@drawable/delivery_man"
 
             />
 
@@ -95,7 +95,7 @@
             android:text="152290722651"
             android:layout_marginTop="188dp"
             android:layout_marginLeft="16dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:fontFamily="@font/montserrat_semibold"
             android:layout_height="wrap_content" />
@@ -123,7 +123,7 @@
             android:text="214 Overlook Circle,Suite 220 Delhi"
             android:layout_marginTop="272dp"
             android:layout_marginLeft="16dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:fontFamily="@font/montserrat_semibold"
             android:layout_height="wrap_content" />
@@ -133,6 +133,7 @@
 
         <Button
             android:layout_width="40dp"
+            android:id="@+id/buttonPanel"
             android:layout_gravity="right"
             android:layout_marginTop="-348dp"
             android:layout_marginRight="32dp"
@@ -458,20 +459,24 @@
                </LinearLayout>
            </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="2dp"
-                android:id="@+id/seek_bar"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_gravity="center"
-                android:background="@drawable/seek_bar"
+                android:orientation="vertical"
                 android:layout_marginRight="80dp"
-                android:layout_height="464dp">
+                android:layout_height="448dp">
 
+                <ProgressBar
+                    android:id="@+id/progressbar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:scaleX="10"
+                    android:max="70"
+                    android:layout_height="match_parent"
+                    android:rotation="-270"/>
 
-
-
-            </RelativeLayout>
-
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -481,48 +486,49 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:background="@drawable/checked"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
 
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:layout_marginTop="73dp"
                     android:background="@drawable/order_confirm"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
                 <ImageView
-                    android:layout_width="16dp"
+                    android:layout_width="20dp"
                     android:layout_marginRight="2dp"
                     android:layout_marginTop="140dp"
                     android:background="@drawable/pickup_vehicle"
-                    android:layout_height="16dp" />
+                    android:layout_height="20dp" />
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:id="@+id/car_pick"
                     android:layout_marginTop="220dp"
                     android:background="@drawable/car"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
 
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:id="@+id/tool_pick"
                     android:layout_marginTop="296dp"
                     android:background="@drawable/service_g"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:id="@+id/tool_done"
                     android:layout_marginTop="374dp"
                     android:background="@drawable/service_complete"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
                 <ImageView
-                    android:layout_width="12dp"
+                    android:layout_width="16dp"
                     android:id="@+id/car_drop"
                     android:layout_marginTop="460dp"
                     android:background="@drawable/vehicle_drop"
-                    android:layout_height="12dp" />
+                    android:layout_height="16dp" />
 
             </RelativeLayout>
+
 
         </androidx.cardview.widget.CardView>
 
