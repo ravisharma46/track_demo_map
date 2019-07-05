@@ -6,348 +6,188 @@
     android:layout_height="match_parent"
     tools:context=".job_card_customer">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_height="wrap_content">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textSize="12sp"
-            android:layout_gravity="left"
-            android:textColor="@color/offwhite"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:layout_marginLeft="8dp"
-            android:text="Service type"
-            android:layout_height="wrap_content" />
-
-
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:background="@drawable/frame_rect"
-            android:layout_marginTop="8dp"
-            android:layout_height="48dp">
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content">
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:textSize="12sp"
                 android:layout_gravity="left"
-                android:textColor="@color/black"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginLeft="16dp"
-                android:text="Denting Painting"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="10sp"
-                android:layout_gravity="right"
-                android:textColor="@color/red"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginRight="36dp"
-                android:text="Details"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/ic_chevron_right_black_24dp"
-                android:layout_height="wrap_content" />
-
-
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/frame_rect_offwhite"
-            android:layout_marginTop="2dp"
-            android:layout_height="48dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-                android:layout_gravity="left"
-                android:textColor="@color/offwhite_01"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginLeft="16dp"
-                android:text="Interior cleaning"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/checked"
-                android:layout_height="16dp" />
-
-
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/frame_rect"
-            android:layout_marginTop="2dp"
-            android:layout_height="48dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-                android:layout_gravity="left"
-                android:textColor="@color/offwhite_01"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginLeft="16dp"
-                android:text="Exterior cleaning"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/checked_svg"
-                android:layout_height="16dp" />
-
-
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/frame_rect_offwhite"
-            android:layout_marginTop="2dp"
-            android:layout_height="48dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-                android:layout_gravity="left"
-                android:textColor="@color/offwhite_01"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginLeft="16dp"
-                android:text="Dashboard cleaning"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/checked_svg"
-                android:layout_height="16dp" />
-
-
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/frame_rect"
-            android:layout_marginTop="2dp"
-            android:layout_height="48dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-                android:layout_gravity="left"
-                android:textColor="@color/offwhite_01"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:layout_marginLeft="16dp"
-                android:text="@string/rubbing"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/checked_svg"
-                android:layout_height="16dp" />
-
-
-
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textSize="12sp"
-            android:layout_gravity="left"
-            android:textColor="@color/offwhite_01"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:layout_marginLeft="8dp"
-            android:text="Enter details"
-            android:layout_height="wrap_content" />
-
-
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/frame_rect_02"
-            android:layout_height="112dp">
-            <EditText
-                android:layout_width="match_parent"
-                android:background="@null"
-                android:gravity="top"
                 android:textColor="@color/offwhite"
-               android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="8dp"
+                android:text="Service type"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/frame_rect"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_medium"
-                android:textSize="10sp"
-                android:hint="Describe your problem"
-                android:layout_height="match_parent" />
+                android:layout_height="48dp">
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_gravity="left"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginLeft="16dp"
+                    android:text="Denting Painting"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="10sp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/tvDetails"
+                    android:layout_gravity="right"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginRight="12dp"
+                    android:text="Details"
+                    android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:textSize="12sp"
-            android:layout_gravity="left"
-            android:textColor="@color/offwhite_01"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:layout_marginLeft="8dp"
-            android:text="Added services"
-            android:layout_height="wrap_content" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/frame_rect_02"
-            android:layout_height="164dp">
+
+
+            </FrameLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:id="@+id/linear_paint"
+                android:visibility="gone"
                 android:layout_height="wrap_content">
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="match_parent">
+                    android:background="@drawable/frame_rect_offwhite"
+                    android:layout_height="48dp">
+
                     <TextView
                         android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="left"
                         android:textColor="@color/offwhite_01"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="Sub Total"
+                        android:layout_marginLeft="16dp"
+                        android:text="Interior cleaning"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_marginLeft="164dp"
-                        android:layout_marginTop="24dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="3,200"
-                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/checked"
+                        android:padding="16dp"
+                        android:layout_height="48dp" />
 
 
 
-                </LinearLayout>
+                </FrameLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:background="@drawable/frame_rect"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="48dp">
+
                     <TextView
                         android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="left"
                         android:textColor="@color/offwhite_01"
-                        android:layout_marginLeft="24dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="Tax"
+                        android:layout_marginLeft="16dp"
+                        android:text="Exterior cleaning"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_marginLeft="212dp"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="200"
-                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/checked_svg"
+                        android:padding="16dp"
+                        android:layout_height="48dp" />
 
 
 
-                </LinearLayout>
+                </FrameLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:background="@drawable/frame_rect_offwhite"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="48dp">
+
                     <TextView
                         android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="left"
                         android:textColor="@color/offwhite_01"
-                        android:layout_marginLeft="24dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="Additional charges"
+                        android:layout_marginLeft="16dp"
+                        android:text="Dashboard cleaning"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:gravity="right"
-                        android:layout_marginLeft="118dp"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="100"
-                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/checked_svg"
+                        android:padding="16dp"
+                        android:layout_height="48dp" />
 
 
 
-                </LinearLayout>
+                </FrameLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:background="@drawable/frame_rect"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="48dp">
+
                     <TextView
                         android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="left"
                         android:textColor="@color/offwhite_01"
-                        android:layout_marginLeft="24dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="Total"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/rubbing"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:gravity="right"
-                        android:layout_marginLeft="208dp"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:textSize="12sp"
-                        android:text="100"
-                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/checked_svg"
+                        android:padding="16dp"
+                        android:layout_height="48dp" />
 
 
-
-                </LinearLayout>
-
-
+                </FrameLayout>
 
 
             </LinearLayout>
@@ -355,59 +195,355 @@
 
 
 
-
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textSize="12sp"
-            android:layout_gravity="left"
-            android:textColor="@color/offwhite_01"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:layout_marginLeft="8dp"
-            android:text="Images"
-            android:layout_height="wrap_content" />
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/frame_rect_02"
-            android:layout_height="164dp">
-
-            
-
-
-
-        </FrameLayout>
-
-
-
-
-
-
-
-
-
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/frame_rect_02"
-            android:layout_height="80dp">
-            <EditText
-                android:layout_width="match_parent"
-                android:background="@null"
-                android:gravity="top"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_medium"
+            <TextView
+                android:layout_width="wrap_content"
                 android:textSize="12sp"
-                android:hint="Describe your problem"
-                android:layout_height="match_parent" />
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="8dp"
+                android:text="Edited text"
+                android:layout_height="wrap_content" />
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/frame_rect_02"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="10sp"
+                    android:hint="abcdfkskdlsnsdclksdcsdkcdkscdks\njhdshcbhbsdbdsjhhjds\nkhbchkbdskc\nbchschdsh"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="8dp"
+                android:text="Added services"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/frame_rect_02"
+                android:layout_height="164dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/offwhite_01"
+                            android:layout_marginLeft="24dp"
+                            android:paddingTop="24dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="Sub Total"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_1"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            android:paddingTop="24dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="3,200"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </FrameLayout>
+
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/offwhite_01"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="Tax"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="right"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:id="@+id/tv_2"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="200"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/offwhite_01"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="Additional charges"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="right"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:id="@+id/tv_3"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="100"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </FrameLayout>
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/offwhite_01"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="Total"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="right"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:id="@+id/tv_4"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="12sp"
+                            android:text="100"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </FrameLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="left"
+                android:textColor="@color/offwhite_01"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="8dp"
+                android:text="Images"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/frame_rect_02"
+                android:layout_height="152dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/frame_sqr"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/image_svg"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_height="80dp" />
+
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/frame_sqr"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/image_svg"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_height="80dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/frame_sqr"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/image_svg"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_height="80dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/frame_sqr"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/image_svg"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_height="80dp" />
+
+                        </FrameLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect"
+            android:layout_height="84dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/pay"
+                android:background="@drawable/rect_button"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Proceed to Pay"
+                android:layout_height="wrap_content" />
+
 
         </FrameLayout>
 
     </LinearLayout>
+
+
 
 
 

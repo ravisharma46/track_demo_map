@@ -78,6 +78,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="140dp"
+            android:scaleY=".5"
             android:layout_height="2dp"
             android:background="@drawable/gradient_bottom"/>
 
@@ -104,6 +105,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:scaleY=".5"
             android:layout_marginTop="220dp"
             android:layout_height="2dp"
             android:background="@drawable/gradient_bottom"/>
@@ -218,6 +220,7 @@
                        android:layout_width="match_parent"
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
+                       android:scaleY=".5"
                        android:layout_marginTop="10dp"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
@@ -259,6 +262,7 @@
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
                        android:layout_marginTop="10dp"
+                       android:scaleY=".5"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
                    <TextView
@@ -298,6 +302,7 @@
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
                        android:layout_marginTop="10dp"
+                       android:scaleY=".5"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
 
@@ -335,6 +340,7 @@
                        android:layout_width="match_parent"
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
+                       android:scaleY=".5"
                        android:layout_marginTop="10dp"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
@@ -375,6 +381,7 @@
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
                        android:layout_marginTop="10dp"
+                       android:scaleY=".5"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
 
@@ -412,6 +419,7 @@
                        android:layout_marginRight="12dp"
                        android:layout_marginLeft="12dp"
                        android:layout_marginTop="10dp"
+                       android:scaleY=".5"
                        android:layout_height="2dp"
                        android:background="@drawable/gradient_bottom"/>
 
@@ -459,13 +467,13 @@
                </LinearLayout>
            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_gravity="center"
                 android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="80dp"
-                android:layout_height="448dp">
+                android:layout_height="wrap_content">
 
                 <ProgressBar
                     android:id="@+id/progressbar1"
@@ -473,59 +481,70 @@
                     android:layout_width="wrap_content"
                     android:scaleX="10"
                     android:max="70"
-                    android:layout_height="match_parent"
+                    android:layout_height="450dp"
                     android:rotation="-270"/>
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="36dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="24dp"
                 android:layout_marginRight="78dp"
-                android:layout_height="match_parent">
+                android:layout_height="520dp">
 
-                <ImageView
-                    android:layout_width="16dp"
-                    android:background="@drawable/checked"
-                    android:layout_height="16dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:background="@drawable/checked"
+                        android:layout_height="24dp" />
 
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_marginTop="73dp"
-                    android:background="@drawable/order_confirm"
-                    android:layout_height="16dp" />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_marginRight="2dp"
-                    android:layout_marginTop="140dp"
-                    android:background="@drawable/pickup_vehicle"
-                    android:layout_height="20dp" />
-                <ImageView
-                    android:layout_width="16dp"
-                    android:id="@+id/car_pick"
-                    android:layout_marginTop="220dp"
-                    android:background="@drawable/car"
-                    android:layout_height="16dp" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/order_confirm"
+                        android:layout_height="24dp" />
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/pickup_vehicle"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/car_pick"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/car"
+                        android:layout_height="24dp" />
 
-                <ImageView
-                    android:layout_width="16dp"
-                    android:id="@+id/tool_pick"
-                    android:layout_marginTop="296dp"
-                    android:background="@drawable/service_g"
-                    android:layout_height="16dp" />
-                <ImageView
-                    android:layout_width="16dp"
-                    android:id="@+id/tool_done"
-                    android:layout_marginTop="374dp"
-                    android:background="@drawable/service_complete"
-                    android:layout_height="16dp" />
-                <ImageView
-                    android:layout_width="16dp"
-                    android:id="@+id/car_drop"
-                    android:layout_marginTop="460dp"
-                    android:background="@drawable/vehicle_drop"
-                    android:layout_height="16dp" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/tool_pick"
+                        android:layout_marginTop="56dp"
+                        android:background="@drawable/service_g"
+                        android:layout_height="24dp" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/tool_done"
+                        android:layout_marginTop="56dp"
+                        android:background="@drawable/service_complete"
+                        android:layout_height="24dp" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/car_drop"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/vehicle_drop"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+
+
+
+
 
             </RelativeLayout>
 
